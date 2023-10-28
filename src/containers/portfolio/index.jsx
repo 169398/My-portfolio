@@ -14,55 +14,26 @@ import { useState } from "react";
 
 const portfolioData = [
   {
-    id: 2,
+    id: 1,
     name: "Ecommerce",
     image: ImageFour,
     link: "https://gamegear-pro.vercel.app/",
   },
   {
-    id: 2,
-    name: "Movies browser",
-    
+    id: 1,
+    name: "I FLIX Movies",
+
     image: ImageOne,
     link: "https://iflix-movies.vercel.app/",
   },
 
   {
-    id: 2,
+    id: 1,
     name: "This Portfolio",
-   
+
     image: ImageEight,
     link: "",
   },
-  {
-    id: 2,
-    name: "Age guessor",
-    image: "",
-    link: "",
-  },
-  {
-    id: 3,
-    name: "Movies browser",
-    image: ImageThree,
-
-    link: "https://iflix-movies.vercel.app/",
-  },
-
-  {
-    id: 3,
-    name: "This Portfolio",
-   
-    image: ImageNine,
-    link: "",
-  },
-
-  {
-    id: 3,
-    name: "E-Commerce",
-    image: ImageTwo,
-    link: "",
-  },
-
   {
     id: 2,
     name: "Age guessor",
@@ -74,15 +45,7 @@ const portfolioData = [
 const filterData = [
   {
     filterId: 1,
-    label: "All",
-  },
-  {
-    filterId: 2,
-    label: "Developement",
-  },
-  {
-    filterId: 3,
-    label: "Design",
+    label: "MY PROJECTS",
   },
 ];
 
@@ -136,16 +99,18 @@ const Portfolio = () => {
               onMouseLeave={() => handleHover(null)}
             >
               <div className="portfolio__content__cards__item__img-wrapper">
-              <a href={item.link} target="_blank" rel="noopener noreferrer">
-  <img alt="dummy data" src={item.image} />
-</a>
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                  <img alt="dummy data" src={item.image} />
+                </a>
               </div>
               <div className="overlay">
                 {index === hoveredValue && (
-                   <div>
-                   <p>{item.name}</p>
-                   <button onClick={() => window.open(item.link, "_blank")}>Visit</button>
-                 </div>
+                  <div>
+                    <p>{item.name}</p>
+                    <button onClick={() => window.open(item.link, "_blank")}>
+                      Visit
+                    </button>
+                  </div>
                 )}
               </div>
             </div>

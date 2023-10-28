@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
+import { FaLinkedin, FaTwitter, FaGithub, FaDownload } from "react-icons/fa"; // Import the icons
 import "./styles.scss";
 
 const Home = () => {
@@ -8,6 +9,34 @@ const Home = () => {
 
   const handleNavigateToContactMePage = () => {
     navigate("/contact");
+  };
+
+  const handleLinkedInClick = () => {
+    window.open("https://www.linkedin.com/in/idris-kulubi");
+  };
+
+  const handleTwitterClick = () => {
+    window.open("https://twitter.com/IdrisMulesi");
+  };
+
+  const handleGitHubClick = () => {
+    window.open("https://github.com/169398");
+  };
+
+  const handleResumeDownload = () => {
+    const resumeUrl =
+      "https://dl.dropboxusercontent.com/scl/fi/ix9ooui4f2oaribtjg6tv/IDRIS-s-Resume-2.pdf?rlkey=xnjpwo8nsx7osrxf6h66el30r&dl=0";
+    window.open(resumeUrl, "_blank");
+  };
+
+  //  This renders the PDF in an iframe
+  const PDFViewer = () => {
+    const resumeUrl =
+      "https://dl.dropboxusercontent.com/scl/fi/ix9ooui4f2oaribtjg6tv/IDRIS-s-Resume-2.pdf?rlkey=xnjpwo8nsx7osrxf6h66el30r&dl=0";
+
+    return (
+      <iframe src={resumeUrl} width="100%" height="600" title="PDF Viewer" />
+    );
   };
 
   return (
@@ -32,9 +61,24 @@ const Home = () => {
       >
         <div className="home__contact-me">
           <button onClick={handleNavigateToContactMePage}>Hire Me</button>
+          <div className="home__social-links">
+            <a onClick={handleLinkedInClick}>
+              <FaLinkedin />
+            </a>
+            <a onClick={handleTwitterClick}>
+              <FaTwitter />
+            </a>
+            <a onClick={handleGitHubClick}>
+              <FaGithub />
+            </a>
+            <a onClick={handleResumeDownload}>
+              <FaDownload />
+            </a>
+          </div>
         </div>
       </Animate>
     </section>
   );
 };
+
 export default Home;

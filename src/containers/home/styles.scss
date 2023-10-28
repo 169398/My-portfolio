@@ -3,7 +3,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   flex-direction: column;
 
   &__text-wrapper {
@@ -22,12 +22,14 @@
       animation: typingEffectAnimation 2.5s steps(20, end);
     }
   }
-  &__contact-me{
+
+  &__contact-me {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 15px;
 
-    button{
+    button {
       cursor: pointer;
       padding: 10px 70px;
       font-size: 2rem;
@@ -37,20 +39,37 @@
       border-radius: 4px;
       font-weight: 500;
 
-      &:hover{
+      &:hover {
         background: var(--yellow-theme-main-color);
         color: #000000;
+      }
+    }
+
+    .home__social-links {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+
+      a {
+        cursor: pointer;
+        margin: 0 15px; // Adjust the spacing between icons
+        font-size: 2.5rem;
+        color: var(--yellow-theme-main-color);
+        transition: all 0.3s;
+
+        &:hover {
+          color: white;
+        }
       }
     }
   }
 }
 
-
-
 @media only screen and (max-width: 550px) {
   .home__text-wrapper h1 {
     font-size: 3rem;
     line-height: 5rem;
+    cursor: pointer;
   }
 }
 
@@ -58,6 +77,7 @@
   .home__text-wrapper h1 {
     font-size: 4rem;
     line-height: 6rem;
+    cursor: pointer;
   }
 }
 
@@ -65,6 +85,7 @@
   .home__text-wrapper h1 {
     font-size: 6rem;
     line-height: 8rem;
+    cursor: pointer;
   }
 }
 

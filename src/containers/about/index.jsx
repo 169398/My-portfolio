@@ -23,14 +23,10 @@ const personalDetails = [
     label: "Email",
     value: "kulubiidris@gmail.com",
   },
-  {
-    label: "Contact No",
-    value: "+2547 14594345",
-  },
 ];
 
 const jobSummary =
-"Seasoned and independent Web Developer with  experience in blending the art of the art of design with skill of programming to deliver an immersive and engaging user experience through efficient website development proactive feature optimization  and relentless debugging .Very passionate about aesthetics and UI design.I love to express my attention to detail and how I can help implement design idea fo my employees";
+  "Seasoned and independent Web Developer with  experience in blending the art of the art of design with skill of programming to deliver an immersive and engaging user experience through efficient website development proactive feature optimization  and relentless debugging .Very passionate about aesthetics and UI design.I love to express my attention to detail and how I can help implement design idea fo my employees   I am highly adept at both independent and collaborative projects, with an emphasis on website development.I am also open to learn any new required technology to work with.";
 
 const About = () => {
   return (
