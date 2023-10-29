@@ -74,6 +74,9 @@
 }
 
 @media only screen and (min-width: 551px) and (max-width: 768px) {
+  .home {
+    margin-top: 40px;
+  }
   .home__text-wrapper h1 {
     font-size: 4rem;
     line-height: 6rem;

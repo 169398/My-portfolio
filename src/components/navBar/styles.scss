@@ -61,19 +61,21 @@
 @media only screen and (max-width: 768px) {
   .navbar__container__menu {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    position: absolute;
-    top: 80px;
-    left: -110%;
-    opacity: 2;
+    flex-direction: row; /* Change to row to align items horizontally */
+    justify-content: space-between; /* Distribute items horizontally */
+    align-items: center; /* Center items vertically */
+    width: 70%;
+    position: center;
+    top: 10px;
+    left: 50%;
+    right: 50%;
+    opacity: 0;
     transition: all 0.5s ease;
 
     &.active {
       background: #181818;
       left: 0;
-      opacity: 2;
+      opacity: 1;
     }
 
     &__item {
