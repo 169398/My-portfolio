@@ -65,7 +65,7 @@
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 300px) {
   .home__text-wrapper h1 {
     font-size: 3rem;
     line-height: 5rem;
@@ -73,7 +73,7 @@
   }
 }
 
-@media only screen and (min-width: 551px) and (max-width: 768px) {
+@media only screen and (min-width: 300px) and (max-width: 768px) {
   .home {
     margin-top: 40px;
   }
@@ -84,7 +84,7 @@
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 990px) {
+@media only screen and (min-width: 300px) and (max-width: 990px) {
   .home__text-wrapper h1 {
     font-size: 6rem;
     line-height: 8rem;
