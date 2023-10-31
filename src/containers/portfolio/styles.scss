@@ -2,6 +2,8 @@
   &__content {
     padding: 20px;
     width: 100%;
+    z-index: 1;
+    position: relative;
 
     &__filter {
       display: inline-block;
@@ -40,9 +42,9 @@
         height: 366px;
         cursor: pointer;
         position: relative;
-        
-        &:hover .overlay{
-            opacity: 1;
+
+        &:hover .overlay {
+          opacity: 1;
         }
 
         &__img-wrapper {
@@ -60,91 +62,86 @@
         }
 
         .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: 0.5s ease;
+          background-color: var(--yellow-theme-main-color);
+
+          div {
             position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            opacity: 0;
-            transition: 0.5s ease;
-            background-color: var(--yellow-theme-main-color);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
 
-            div{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                text-align: center;
-
-                p{
-                    color: #000000;
-                    margin: 0px;
-                    font-size: 4rem;
-                    position: relative;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    animation: typingEffect 1s steps(30,end);
-                }
-
-                button{
-                    cursor: pointer;
-                    margin-top: 16px;
-                    padding: 10px 70px;
-                    font-size: 2rem;
-                    background: transparent;
-                    color: #000;
-                    border : 1.5px solid #000;
-                    border-radius: 4px;
-                    font-weight: 500;
-
-                }
+            p {
+              color: #000000;
+              margin: 0px;
+              font-size: 4rem;
+              position: relative;
+              overflow: hidden;
+              white-space: nowrap;
+              animation: typingEffect 1s steps(30, end);
             }
+
+            button {
+              cursor: pointer;
+              margin-top: 16px;
+              padding: 10px 70px;
+              font-size: 2rem;
+              background: transparent;
+              color: #000;
+              border: 1.5px solid #000;
+              border-radius: 4px;
+              font-weight: 500;
+            }
+          }
         }
       }
     }
   }
 }
 
-@media only screen and (max-width: 480px){
-    .portfolio__content__filter > li{
-        font-size: 11px;
-    }
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .portfolio__content__filter > li {
+    font-size: 14px;
+  }
+  .navbar__container__menu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: #181818;
+  }
 
-    .portfolio__content__cards{
-        grid-template-columns: repeat(1,1fr);
-    }
-}
+  .portfolio__content__cards {
+    grid-template-columns: repeat(2, 1fr);
 
-@media only screen and (min-width: 481px) and (max-width: 767px){
-    .portfolio__content__filter > li{
-        font-size: 14px;
-    }
-
-    .portfolio__content__cards{
-        grid-template-columns: repeat(2,1fr);
-
-        &__item{
-
-            .overlay{
-                div > p {
-                     font-size: 2.5rem;
-                }
-            }
+    &__item {
+      .overlay {
+        div > p {
+          font-size: 2.5rem;
         }
+      }
     }
-
+  }
 }
 
-@keyframes typingEffect{
-    from{
-        width: 0;
-    }
+@keyframes typingEffect {
+  from {
+    width: 0;
+  }
 
-    to {
-        width: 100%;
-    }
+  to {
+    width: 100%;
+  }
 }
-
-

@@ -52,7 +52,7 @@
 
       a {
         cursor: pointer;
-        margin: 0 15px; // Adjust the spacing between icons
+        margin: 0 15px;
         font-size: 2.5rem;
         color: var(--yellow-theme-main-color);
         transition: all 0.3s;
@@ -65,15 +65,16 @@
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 560px) {
   .home__text-wrapper h1 {
     font-size: 3rem;
     line-height: 5rem;
     cursor: pointer;
+    padding: 20px;
   }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 768px) {
+@media only screen and (min-width: 560px) and (max-width: 768px) {
   .home {
     margin-top: 40px;
   }
@@ -84,7 +85,7 @@
   }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 990px) {
+@media only screen and (min-width: 560px) and (max-width: 990px) {
   .home__text-wrapper h1 {
     font-size: 6rem;
     line-height: 8rem;
