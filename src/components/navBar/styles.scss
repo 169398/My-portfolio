@@ -58,30 +58,30 @@
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 300px) {
   .navbar__container__menu {
     display: flex;
     flex-direction: row; /* Change to row to align items horizontally */
     justify-content: space-between; /* Distribute items horizontally */
     align-items: center; /* Center items vertically */
-    width: 70%;
+    width: 100%;
     position: center;
-    top: 10px;
-    left: 50%;
-    right: 50%;
+    top: 70px;
+    left: 100%;
     opacity: 0;
     transition: all 0.5s ease;
 
     &.active {
       background: #181818;
-      left: 0;
+      left: 3px; /* Add "px" for specifying the position */
       opacity: 1;
     }
 
     &__item {
       border-bottom: 1px solid #282828;
       margin: 0;
-      padding: 20px 0;
+      font-size: 0.7rem; /* Adjust the font size as needed */
+      width: 100%;
     }
   }
 
@@ -89,6 +89,51 @@
     display: block;
     cursor: pointer;
     color: var(--yellow-theme-main-color);
-    padding-right: 20px;
+    font-size: 1rem; /* Adjust the font size as needed */
+    padding-right: 10px; /* Adjust as needed */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar__container__menu {
+    width: 50%; /* Adjust the width as needed to fit the screen */
+  }
+  .nav-icon {
+    padding-right: 10px; /* Adjust as needed */
+  }
+
+  .navbar__container__menu {
+    display: flex;
+    flex-direction: row; /* Change to row to align items horizontally */
+    justify-content: space-between; /* Distribute items horizontally */
+    align-items: center; /* Center items vertically */
+    width: 50%; /* Adjust the width as needed to fit the screen */
+    position: absolute; /* Use absolute positioning */
+    top: 10px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    opacity: 0;
+    transition: all 0.5s ease;
+
+    &.active {
+      background: #181818;
+      left: 0;
+      opacity: 1;
+      font-size: 1rem; /* Adjust the font size as needed */
+      padding: 10px 0;
+    }
+
+    &__item {
+      border-bottom: 1px solid #282828;
+      margin: 0;
+      padding: 5px 0;
+    }
+  }
+
+  .nav-icon {
+    display: block;
+    cursor: pointer;
+    color: var(--yellow-theme-main-color);
+    padding-right: 5px; /* Adjust as needed */
   }
 }

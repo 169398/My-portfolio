@@ -59,4 +59,38 @@
   &__main-page-content {
     height: calc(100% - 80px);
   }
+
+  @media only screen and (max-width: 300px) {
+    .contact__content__form__controlswrapper {
+      display: flex;
+      flex-direction: column;
+      z-index: 3; /* Ensure the form content is below the menu */
+    }
+
+    .navbar__container__menu {
+      z-index: 3;
+    }
+
+    .contact__content__form__controlswrapper div {
+      margin-bottom: 1rem;
+    }
+
+    .contact__content__form button {
+      width: 80%;
+    }
+
+    .about,
+    .home,
+    .resume,
+    .portfolio {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  height: 100%;
+
+  &__main-page-content {
+    height: calc(100% - 80px);
+  }
 }
