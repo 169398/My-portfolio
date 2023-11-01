@@ -6,8 +6,8 @@ import ImageFour from "../../images/image4.jpg";
 import ImageEight from "../../images/image8.jpg";
 //import ImageTwo from "../../images/image2.jpg";
 //import ImageThree from "../../images/image3.jpg";
-//import ImageNine from "../../images/image9.jpg";
-//import ImageFive from "../../images/image5.jpg";
+import ImageTwelve from "../../images/image12.jpg";
+import ImageEleven from "../../images/image11.jpg";
 
 import "./styles.scss";
 import { useState } from "react";
@@ -34,10 +34,11 @@ const portfolioData = [
     image: ImageEight,
     link: " https://idris-kulubi.vercel.app/",
   },
-  {
-    id: 2,
-    name: "Age guessor",
-    image: "",
+    {
+    id: 1,
+    name: "Age-Gender-Guesser",
+
+    image: Image12,
     link: "",
   },
 ];
