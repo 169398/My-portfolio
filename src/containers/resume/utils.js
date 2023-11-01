@@ -11,7 +11,7 @@ export const data = {
       description: "Implemented the IMDB API for the Information",
     },
     {
-      title: " Created a Age Guessor Web Application in REACT",
+      title: " Created a Age and Gender Guessor Web Application in REACT",
       subTitle: "",
       description: "Used Agify API",
     },
@@ -33,12 +33,5 @@ export const data = {
       description: " Full Stack Web Development ",
     },
 
-    /*  {
-      title: "B.Tech",
-      subTitle: "XYZ institute of technology",
-      description:
-        "Bachelor of technology in computer science",
-    },
-    */
   ],
 };
