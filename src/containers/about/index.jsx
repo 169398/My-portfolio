@@ -48,7 +48,7 @@ const About = () => {
               transform: "translatex(0px)",
             }}
           >
-            <h3>Front End Developer</h3>
+            <h3>Web Developer</h3>
             <p>{jobSummary}</p>
           </Animate>
 
