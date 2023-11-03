@@ -7,7 +7,7 @@ import ImageEight from "../../images/image8.jpg";
 //import ImageTwo from "../../images/image2.jpg";
 //import ImageThree from "../../images/image3.jpg";
 import ImageTwelve from "../../images/image12.jpg";
-//import ImageEleven from "../../images/image11.jpg";
+import ImageSeventen from "../../images/image17.jpg";
 
 import "./styles.scss";
 import { useState } from "react";
@@ -23,7 +23,7 @@ const portfolioData = [
     id: 1,
     name: "I FLIX Movies",
 
-    image: ImageOne,
+    image: ImageSeventen,
     link: "https://iflix-movies.vercel.app/",
   },
 
