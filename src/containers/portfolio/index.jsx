@@ -7,7 +7,9 @@ import ImageEight from "../../images/image8.jpg";
 //import ImageTwo from "../../images/image2.jpg";
 //import ImageThree from "../../images/image3.jpg";
 import ImageTwelve from "../../images/image12.jpg";
-import ImageSeventen from "../../images/image17.jpg";
+import ImageSeventen from "../../images/images17.jpg";
+import ImageTen from "../../images/crow.jpg";
+import ImageEights from "../../images/image19.jpg";
 
 import "./styles.scss";
 import { useState } from "react";
@@ -39,6 +41,21 @@ const portfolioData = [
     name: "Age-Gender-Guesser",
 
     image: ImageTwelve,
+    link: "",
+  },
+
+  {
+    id: 1,
+    name: "Crow-AI",
+
+    image: ImageTen,
+    link: "",
+  },
+  {
+    id: 1,
+    name: "YOUTH FOR CHANGE",
+
+    image: ImageEights,
     link: "",
   },
 ];
