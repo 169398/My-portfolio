@@ -27,6 +27,11 @@ export const data = {
       subTitle: "Alison",
       description: " Diploma in Graphic Design",
     },
+     {
+      title: "CERTIFICATION",
+      subTitle: "Great Learning",
+      description: "Java Programming",
+    },
     {
       title: "CERTIFICATION",
       subTitle: "University of Helsinki",
