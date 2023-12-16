@@ -25,14 +25,14 @@ const Home = () => {
 
   const handleResumeDownload = () => {
     const resumeUrl =
-      "https://dl.dropboxusercontent.com/scl/fi/ix9ooui4f2oaribtjg6tv/IDRIS-s-Resume-2.pdf?rlkey=xnjpwo8nsx7osrxf6h66el30r&dl=0";
+      "/"
     window.open(resumeUrl, "_blank");
   };
 
   //  This renders the PDF in an iframe
   const PDFViewer = () => {
     const resumeUrl =
-      "https://dl.dropboxusercontent.com/scl/fi/ix9ooui4f2oaribtjg6tv/IDRIS-s-Resume-2.pdf?rlkey=xnjpwo8nsx7osrxf6h66el30r&dl=0";
+      "";
 
     return (
       <iframe src={resumeUrl} width="100%" height="600" title="PDF Viewer" />
