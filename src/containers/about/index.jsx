@@ -26,7 +26,7 @@ const personalDetails = [
 ];
 
 const jobSummary =
-  "Seasoned and independent Web Developer with  experience in blending the art of the art of design with skill of programming to deliver an immersive and engaging user experience through efficient website development proactive feature optimization  and relentless debugging .Very passionate about aesthetics and UI design.I love to express my attention to detail and how I can help implement design idea fo my employees   I am highly adept at both independent and collaborative projects, with an emphasis on website development.I am also open to learn any new required technology to work with.";
+  "Seasoned and independent Web Developer with  experience in blending the art of the art of design with skill of programming to deliver an immersive and engaging user experience through efficient website development proactive feature optimization  and relentless debugging .Very passionate about aesthetics and UI design.I love to express my attention to detail and how I can help implement design idea fo my employees   I am highly adept at both independent and collaborative projects, with an emphasis on website development. This has made me to win two hackathons and in one my project was the first out of close to 200 projects .I am also open to learn any new required technology to work with.";
 
 const About = () => {
   return (
